@@ -28,8 +28,8 @@ console.log('Starting application initialization'); // Log at the beginning of t
 const routes = (
   <Router>
     <Routes>
-      <Route path="/ramosrecruitingresources" element={<Root />} />
-      <Route path="/ramosrecruitingresources/admin/*" element={<AdminRoutes />} /> {/* Include AdminRoutes component */}
+      <Route path="/" element={<Root />} />
+      <Route path="/admin/*" element={<AdminRoutes />} /> {/* Include AdminRoutes component */}
     </Routes>
   </Router>
 );
