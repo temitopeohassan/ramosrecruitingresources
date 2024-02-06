@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ramosrecruitingresources/static/css/main.bac20927.css",
-    "main.js": "/ramosrecruitingresources/static/js/main.c3040775.js",
+    "main.js": "/ramosrecruitingresources/static/js/main.8a3ea17c.js",
     "static/media/slider-mainbg-001.jpg": "/ramosrecruitingresources/static/media/slider-mainbg-001.119e3f00324bc637773c.jpg",
     "static/media/manufacturing-hover.png": "/ramosrecruitingresources/static/media/manufacturing-hover.eea1bdd50c2c2a5f89d2.png",
     "static/media/agriculture-hover.png": "/ramosrecruitingresources/static/media/agriculture-hover.62b3a94040caf9ad62dc.png",
@@ -33,10 +33,10 @@
     "static/media/slick.woff": "/ramosrecruitingresources/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ramosrecruitingresources/index.html",
     "main.bac20927.css.map": "/ramosrecruitingresources/static/css/main.bac20927.css.map",
-    "main.c3040775.js.map": "/ramosrecruitingresources/static/js/main.c3040775.js.map"
+    "main.8a3ea17c.js.map": "/ramosrecruitingresources/static/js/main.8a3ea17c.js.map"
   },
   "entrypoints": [
     "static/css/main.bac20927.css",
-    "static/js/main.c3040775.js"
+    "static/js/main.8a3ea17c.js"
   ]
 }
