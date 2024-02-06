@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ramosrecruitingresources/static/css/main.bac20927.css",
+    "main.js": "/ramosrecruitingresources/static/js/main.8a3ea17c.js",
+    "static/media/slider-mainbg-001.jpg": "/ramosrecruitingresources/static/media/slider-mainbg-001.119e3f00324bc637773c.jpg",
+    "static/media/manufacturing-hover.png": "/ramosrecruitingresources/static/media/manufacturing-hover.eea1bdd50c2c2a5f89d2.png",
+    "static/media/agriculture-hover.png": "/ramosrecruitingresources/static/media/agriculture-hover.62b3a94040caf9ad62dc.png",
+    "static/media/construction-hover.png": "/ramosrecruitingresources/static/media/construction-hover.b69f101b0b42a087e202.png",
+    "static/media/row-bgimage-7.jpg": "/ramosrecruitingresources/static/media/row-bgimage-7.5d68bac36a564c519353.jpg",
+    "static/media/country-01.jpg": "/ramosrecruitingresources/static/media/country-01.9d6acff98db98cc195e3.jpg",
+    "static/media/production-hover.png": "/ramosrecruitingresources/static/media/production-hover.78e17cdb2a0afb75d3a5.png",
+    "static/media/transport-hover.png": "/ramosrecruitingresources/static/media/transport-hover.bf237e74ef00bf6ce45b.png",
+    "static/media/insurance-hover.png": "/ramosrecruitingresources/static/media/insurance-hover.a181be91b9617c5b9ea2.png",
+    "static/media/finance-hover.png": "/ramosrecruitingresources/static/media/finance-hover.946eb3aae0d5ed0a1bd0.png",
+    "static/media/technology-hover.png": "/ramosrecruitingresources/static/media/technology-hover.4d2c1cbbe12d94fa3d16.png",
+    "static/media/services-06.jpg": "/ramosrecruitingresources/static/media/services-06.28e7d3fb488b9a5df9c3.jpg",
+    "static/media/col-bgimage-7.jpg": "/ramosrecruitingresources/static/media/col-bgimage-7.c383b95c83b353cea1e4.jpg",
+    "static/media/services-01.jpg": "/ramosrecruitingresources/static/media/services-01.a5b6fa4d5429548a873f.jpg",
+    "static/media/services-04.jpg": "/ramosrecruitingresources/static/media/services-04.5db2dee06953ff7edbd3.jpg",
+    "static/media/services-05.jpg": "/ramosrecruitingresources/static/media/services-05.3efc928d6dfef7c9e681.jpg",
+    "static/media/services-03.jpg": "/ramosrecruitingresources/static/media/services-03.52822b7e5c759305caa5.jpg",
+    "static/media/services-02.jpg": "/ramosrecruitingresources/static/media/services-02.7209cfab2b4f6b3b5f6b.jpg",
+    "static/media/pagetitle-bg.jpg": "/ramosrecruitingresources/static/media/pagetitle-bg.47a0bfbd848db441f5f7.jpg",
+    "static/media/single-img-05.jpg": "/ramosrecruitingresources/static/media/single-img-05.0183f1d2ef14923d1e4b.jpg",
+    "static/media/logo-img.png": "/ramosrecruitingresources/static/media/logo-img.a7123e1e88b3e2770ce5.png",
+    "static/media/footer-logo.png": "/ramosrecruitingresources/static/media/footer-logo.84160e0d1cfe60a7ee18.png",
+    "static/media/tab-img03.jpg": "/ramosrecruitingresources/static/media/tab-img03.b1b5ac97f90e60c66566.jpg",
+    "static/media/tab-img02.jpg": "/ramosrecruitingresources/static/media/tab-img02.c4fcfca4793a5820605e.jpg",
+    "static/media/tab-img01.jpg": "/ramosrecruitingresources/static/media/tab-img01.b102774cb17f84487f5c.jpg",
+    "static/media/slick.svg": "/ramosrecruitingresources/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ramosrecruitingresources/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ramosrecruitingresources/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ramosrecruitingresources/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ramosrecruitingresources/index.html",
+    "main.bac20927.css.map": "/ramosrecruitingresources/static/css/main.bac20927.css.map",
+    "main.8a3ea17c.js.map": "/ramosrecruitingresources/static/js/main.8a3ea17c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bac20927.css",
+    "static/js/main.8a3ea17c.js"
+  ]
+}
