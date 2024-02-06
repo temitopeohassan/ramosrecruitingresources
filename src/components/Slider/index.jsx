@@ -13,7 +13,6 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../../data";
-import { mobile } from "../../responsive";
 
 const Container = styled.div`
   width: 100%;
@@ -21,7 +20,6 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
@@ -33,11 +31,9 @@ const Arrow = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: ${(props) => props.direction === "left" && "10px"};
-  right: ${(props) => props.direction === "right" && "10px"};
-  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  ${(props) => props.direction === "left" ? "left: 10px;" : "right: 10px;"}
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
@@ -48,6 +44,9 @@ const Wrapper = styled.div`
   display: flex;
   transition: all 1.5s ease;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Slide = styled.div`
@@ -65,9 +64,9 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 `;
-
-
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -82,7 +81,7 @@ const Slider = () => {
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        <ArrowLeftOutlined />
+        <ArrowLeftOutlined style={{ fontSize: "24px" }} />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
@@ -90,11 +89,11 @@ const Slider = () => {
             <ImgContainer>
               <Image src={item.img} />
             </ImgContainer>
-                     </Slide>
+          </Slide>
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-        <ArrowRightOutlined />
+        <ArrowRightOutlined style={{ fontSize: "24px" }} />
       </Arrow>
     </Container>
   );
