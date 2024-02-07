@@ -19,6 +19,8 @@ import Services from '../pages/Services';
 import JobListing from '../pages/JobListing';
 import Login from '../pages/Login';
 import Contact from '../pages/Contact';
+import User from '../pages/User';
+import UserUpdate from '../pages/UserUpdate';
 import SignUp from '../pages/SignUp';
 import ForgotPwd from '../pages/ForgotPwd';
 import ScrollToTop from '../components/ScrollToTop';
@@ -42,6 +44,8 @@ const Root = () => {
         <Route path="/job_listing" element={<JobListing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/user_profile" element={<User />} />
+        <Route path="/profile_update" element={<UserUpdate />} />
         <Route path="/sign_up" element={<SignUp />} />
         <Route path="/forgot_password" element={<ForgotPwd />} />
         <Route path="/facebook" element={<Facebook />} />
