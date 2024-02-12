@@ -16,25 +16,7 @@ import { Link } from 'react-router-dom';
 const CTA = () => {
   return (
    <>
-   <section className="ttm-row cta-section bg-img7 bg-theme-DarkColor ttm-bg ttm-bgimage-yes text-theme-WhiteColor clearfix" style={{ backgroundImage:  `url(${Bg})` }}
->
-    <div className="ttm-row-wrapper-bg-layer ttm-bg-layer bg-theme-DarkColor"></div>
-    <div className="container">
-        <div className="row">
-        <div className="col-lg-8 m-auto row-title">
-            <div className="section-title title-style-center_text">
-                <div className="title-header">
-                    <h3><span className="text-theme-SkinColor">More than 50,000 happy client</span></h3>
-                    <h2 className="title">Get In Touch With Recruitment Staffing<span className="text-theme-SkinColor"> Agency!</span></h2>
-                    </div>
-                    </div>
-                    <div className="text-center pt-10">
-                        <Link className="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border ttm-btn-color-white" to="/contact">contact us</Link>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        </section>
+  
                         <section className="ttm-row action-section bg-theme-SkinColor text-theme-WhiteColor clearfix">
                     <div className="container">
                         <div className="row">

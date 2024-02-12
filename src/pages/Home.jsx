@@ -14,6 +14,7 @@ import Slider from '../components/Slider'
 import Featured from '../components/Featured';
 import CTA from '../components/CTA';
 import Services from '../components/Services';
+import ProgressBarSection from '../components/ProgressBarSection';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
     <Slider />
     <Featured />
     <Services />
+    <ProgressBarSection />
     <CTA />
     
     </>

@@ -1,138 +1,168 @@
-import React, { useState } from 'react';
+
+
+
+
+
+import React from 'react';
+import styled from 'styled-components';
 import Bg from "../assets/img/pagetitle-bg.jpg";
+import ImgBg from "../assets/img/row-bgimage-7.jpg";
 import { Link } from 'react-router-dom';
 import Single from "../assets/img/single-img-05.jpg";
-import Dots from "../assets/img/dot-pattern.png";
-import Tab1 from "../assets/img/tab-img01.jpg";
-import Tab2 from "../assets/img/tab-img02.jpg";
-import Tab3 from "../assets/img/tab-img03.jpg";
+import CTA from '../components/CTA';
+import StyledComponent from "../components/AboutSection"
 
-const About = () => {
-  const [activeTab, setActiveTab] = useState(1);
 
-  const handleTabClick = (tabNumber) => {
-    setActiveTab(tabNumber);
-  };
 
+const Container = styled.div`
+  margin-top: 40px;
+`;
+
+const DescriptionTitle = styled.h3`
+  margin-bottom: 20px;
+`;
+
+const FeaturedIconBox = styled.div`
+  margin-top: 20px;
+`;
+
+const FeaturedTitle = styled.h3`
+  color: #000; /* You can adjust the color as needed */
+`;
+
+
+const FeaturedDesc = styled.div`
+  color: #000; /* You can adjust the color as needed */
+`;
+
+const SingleImageWrapper = styled.div`
+  margin-bottom: 30px;
+`;
+
+const ServiceComponent = () => {
   return (
-    <>
-      {/* Page Header */}
-      <div className="page-header-area bg-img" style={{ backgroundImage:  `url(${Bg})` }} >
-    <div className="page-header-area-inner">
-       <div className="container">
-          <div className="row">
-             <div className="col-lg-12 text-center">
-                <div className="page-header-content-inner">
-                   <div className="page-header-content">
-                      <h2>About Us</h2>
-                      <div>
-                      </div>
-                      <div className="breadcrumb-wrapper">
-                         <span>
-                            <Link to="/" title="Homepage">
-                            Home</Link>
-                         </span>
-                         <span className="bread-sep">&nbsp;/&nbsp;</span>About Us
-                      </div>
-                      <div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    </div>
 
-      {/* About Section */}
-      <section className="ttm-row about-section clearfix">
-        <div className="container">
-          <div className="row">
-            {/* Left Column with Section Title and Tabs */}
-            <div className="col-lg-6">
-              <div className="section-title">
-                {/* ... (your section title content) */}
+   <>
+   <div className="page-header-area bg-img" style={{ backgroundImage:  `url(${Bg})` }} >
+   <div className="page-header-area-inner">
+      <div className="container">
+         <div className="row">
+            <div className="col-lg-12 text-center">
+               <div className="page-header-content-inner">
+                  <div className="page-header-content">
+                     <h2>Job Listings</h2>
+                     <div>
+                     </div>
+                     <div className="breadcrumb-wrapper">
+                        <span>
+                           <Link to="/" title="Homepage">
+                           Home</Link>
+                        </span>
+                        <span className="bread-sep">&nbsp;/&nbsp;</span>Job Listings
+                     </div>
+                     <div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <Container className="col-lg-12 content-area order-lg-2">
+
+
+
+
+
+
+
+
+
+
+
+
+   <div className='row'>
+    <div className="col-md-6">
+        <div className="ttm_single_image-wrapper mb-30">
+        <img className="img-fluid" src={Single} alt="services-img" />
+        </div>
               </div>
-
-              {/* Tabs */}
-              <div className="ttm-tabs ttm-tab-style-01">
-                <div className="react-tabs" data-tabs="true">
-                  <ul className="tabs" role="presentation">
-                    {[1, 2, 3].map((tabNumber) => (
-                      <li
-                        key={tabNumber}
-                        className={`tab ${activeTab === tabNumber ? 'react-tabs__tab--selected' : ''}`}
-                        role="presentation"
-                        onClick={() => handleTabClick(tabNumber)}
-                      >
-                        <a className={`tab-${tabNumber}`} tabIndex="0">{`Tab ${tabNumber}`}</a>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* Tab Content */}
-                  <div className="content-tab">
-                    {[1, 2, 3].map((tabNumber) => (
-                      <div
-                        key={tabNumber}
-                        className={`react-tabs__tab-panel ${activeTab === tabNumber ? 'react-tabs__tab-panel--selected' : ''}`}
-                        role="tabpanel"
-                        id={`react-tabs-${tabNumber}`}
-                        aria-labelledby={`react-tabs-${tabNumber - 1}`}
-                      >
-                        <div className="row">
-                          <div className="col-lg-4 col-md-3 col-sm-4">
-                            <img
-                              className="img-fluid alignleft"
-                              height="200"
-                              width="200"
-                              src={tabNumber === 2 ? Tab2 : Tab1}
-                              alt={`Tab ${tabNumber} image`}
-                            />
-                          </div>
-                          <div className="col-lg-8 col-md-9 col-sm-8">
-                            <div className="pt-15">
-                              {/* Content for each tab */}
-                              <p>{`Content for Tab ${tabNumber}`}</p>
-                              <ul className="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
-                                <li>
-                                  <i className="far fa-check-circle"></i>
-                                  <div className="ttm-list-li-content">An ability to attract and retain great talent</div>
-                                </li>
-                                <li>
-                                  <i className="far fa-check-circle"></i>
-                                  <div className="ttm-list-li-content">A talent need, quickly and cost-effectively</div>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+        
+                <div className="col-md-6">
+                  <FeaturedTitle className="mb-20">Who We Are</FeaturedTitle>
+                  <FeaturedDesc>
+                  <p>At Ramos Recruiting Resources (RRR), We are Resourceful, Resilient and Reliable. The No.1 solution for a full staffing service, and highly skilled professionals who seek life-changing opportunities.</p>
+                  <p>We place available jobs that are up-to-the-minute and relevant relating to any field. We don’t only offer jobs, we put job seekers first and help to build their career. </p>
+                  <p>We differentiate ourselves from other agencies by aligning the optimal candidate with the right personality and skill set, to meet your organization needs. </p>
+                  <p>RRR will pride itself in assisting organizations in the recruitment of the very best talents that match their various vacant positions while equipping talents with the tools needed to successfully transition into the organization’s roles as required.</p> 
+                  </FeaturedDesc>
+                </div>
+</div>
+</Container>
+<section className="ttm-row cta-section bg-img7 bg-theme-DarkColor ttm-bg ttm-bgimage-yes text-theme-WhiteColor clearfix" style={{ backgroundImage:  `url(${ImgBg})` }}
+>
+    <div className="ttm-row-wrapper-bg-layer ttm-bg-layer bg-theme-DarkColor"></div>
+    <div className="container">
+        <div className="row">
+        <div className="col-lg-8 m-auto row-title">
+            <div className="section-title title-style-center_text">
+                <div className="title-header">
+                    <h3><span className="text-theme-SkinColor">More than 50,000 happy client</span></h3>
+                    <h2 className="title">Get In Touch With Recruitment Staffing<span className="text-theme-SkinColor"> Agency!</span></h2>
+                    </div>
+                    </div>
+                    <div className="text-center pt-10">
+                        <Link className="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border ttm-btn-color-white" to="/contact">contact us</Link>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
 
-            {/* Right Column with Image */}
-            <div className="col-lg-6">
-              <div className="mr-30 mt-30 mt-lg-60 mb-lg-30">
-                <div className="d-flex">
-                  <img src={Single} className="img-fluid" alt="single_05" />
-                  <div className="flex-basis-auto ml_180 mr_30 mt_30 z-index_1">
-                    <img src={Dots} className="img-fluid" alt="dot-pattern" />
-                  </div>
-                  <div className="d-flex justify-content-end flex-column ml_180 mr_30 mb_35 z-index_1">
-                    <img src={Dots} className="img-fluid" alt="dot-pattern" />
-                  </div>
-                </div>
-              </div>
-            </div>
+<div className="row">
+    {/* Repeat the following block for each service */}
+    <div className="col-lg-6 col-md-6 col-sm-6">
+      <div className="featured-icon-box icon-align-before-content icon-ver_align-top mr-50 mr-md-0 mt-20">
+      
+        <div className="featured-content">
+          <div className="featured-title">
+            <h3>Our Mission</h3>
+          </div>
+          <div className="featured-desc">
+          <p>To provide a staffing solution mechanism that offers a partnership-based workforce with innovative solution to address the challenges of unemployment.</p>
+
+<p>To provide a platform where reputable employers can find and connect with the right candidate, with the required cutting-edge skills to join their team and grow the business.</p>
+
+<p>To provide tailored solutions for everything ranging from transparent recruitment experience to using human capital management and employment – if we can over-deliver, we do!</p>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
+    <div className="col-lg-6 col-md-6 col-sm-6">
+      <div className="featured-icon-box icon-align-before-content icon-ver_align-top mr-50 mr-md-0 mt-20">
+        
+        <div className="featured-content">
+          <div className="featured-title">
+            <h3>Our Vision</h3>
+          </div>
+          <div className="featured-desc">
+          <p>To become the key player in the recruiting industry using our existing integrated approach to create fulfillment for our clients, candidate, and staff. </p>
+
+<p>To build a database of resources that will enable a job seeker to succeed in the marketplace.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* End of repeated block */}
+  </div>
+    
+<CTA />
+   </>
   );
 };
 
-export default About;
+export default ServiceComponent;
+
+

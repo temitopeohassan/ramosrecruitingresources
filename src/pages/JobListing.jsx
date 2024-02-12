@@ -11,7 +11,7 @@
 
 
 import React from 'react'
-
+import JobWidget from '../components/Widgets/';
 import Bg from "../assets/img/pagetitle-bg.jpg";
 import Widget from "../assets/img/col-bgimage-7.jpg";
 import Job1 from "../assets/img/job-01.png";
@@ -76,37 +76,10 @@ const JobListing = () => {
    <div className='row'>
       <div className="col-lg-4 widget-area sidebar-left job_list-widget-area">
          <div className="job_list-widget">
-            <aside className="widget job-widget">
-               <h3 className="widget-title"><i className="flaticon flaticon-calendar-1"></i>Date Posted</h3>
-               <form id="list1" className="list-filter">
-                  <div><label className="radio"><input type="radio" name="post_date" value="Today" />Today</label><label className="radio"><input type="radio" name="post_date" value="Last 7 days" checked="" />Last 7 days</label><label className="radio"><input type="radio" name="post_date" value="Last 14 days" />Last 14 days</label><label className="radio"><input type="radio" name="post_date" value="Last 21 days" />Last 21 days</label><label className="radio"><input type="radio" name="post_date" value="Last 30 days" />Last 30 days</label></div>
-               </form>
-            </aside>
-            <aside className="widget job-widget">
-               <h3 className="widget-title"><i className="flaticon flaticon-subfolder-1"></i>Categories</h3>
-               <form id="list2" className="list-filter">
-                  <div><label className="radio"><input type="radio" name="categories" value="Digital Marketing" checked="" />Digital Marketing</label><label className="radio"><input type="radio" name="categories" value="Charity &amp; Voluntary" />Charity &amp; Voluntary</label><label className="radio"><input type="radio" name="categories" value="IT Contractor" />IT Contractor</label><label className="radio"><input type="radio" name="categories" value="Estate Agency" />Estate Agency</label><label className="radio"><input type="radio" name="categories" value="Graduate" />Graduate</label></div>
-               </form>
-            </aside>
-            <aside className="widget job-widget">
-               <h3 className="widget-title"><i className="flaticon flaticon-expert"></i>Experince</h3>
-               <form id="list3" className="list-filter">
-                  <div><label className="radio"><input type="radio" name="ex_year" value="0Year to 1Year" />0Year to 1Year</label><label className="radio"><input type="radio" name="ex_year" value="1Year to 2Year" />1Year to 2Year</label><label className="radio"><input type="radio" name="ex_year" value="2Year to 3Year" />2Year to 3Year</label><label className="radio"><input type="radio" name="ex_year" value="3Year or more" checked="" />3Year or more</label></div>
-               </form>
-            </aside>
-            <aside className="widget job-widget">
-               <h3 className="widget-title"><i className="flaticon flaticon-gender"></i>Gender</h3>
-               <form id="list4" className="list-filter">
-                  <div><label className="radio"><input type="radio" name="gender" value="male" checked="" />male</label><label className="radio"><input type="radio" name="gender" value="female" />female</label></div>
-               </form>
-            </aside>
+            <JobWidget />
+         
          </div>
-         <aside className="widget widget-download">
-            <ul className="download">
-               <li><a href="#">Download.pdf</a><i className="ti ti-files"></i></li>
-               <li><a href="#">Download.txt</a><i className="ti ti-files"></i></li>
-            </ul>
-         </aside>
+        
          <aside className="widget widget-banner text-theme-WhiteColor">
             <div className="ttm-col-bgcolor-yes bg-theme-DarkColor text-theme-WhitColor col-bg-img-seven ttm-col-bgimage-yes ttm-bg p-40">
                <div className="ttm-col-wrapper-bg-layer ttm-bg-layer bg-theme-DarkColor" style={{ backgroundImage:  `url(${Widget})` }}>

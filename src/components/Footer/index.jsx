@@ -16,7 +16,8 @@ import {
     FaMapMarkerAlt,
     FaFacebook,
   FaInstagram,
-  FaLinkedin
+  FaLinkedin,
+  FaTwitter
   } from 'react-icons/fa';
   import { Link } from 'react-router-dom';
 
@@ -51,7 +52,7 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img id="footer-logo-img" className="img-fluid auto_size" height="40" width="162" src={img} alt="footer-logo" />
                         </div>
-                        <p>HireCo is multi award-winning executive search, management recruiter and employer branding organization. Our customized recruiting process delivers fast &amp; accurate results</p>
+                        <p>At Ramos Recruiting Resources (RRR), We are Resourceful, Resilient and Reliable. The No.1 solution for a full staffing service, and highly skilled professionals who seek life-changing opportunities.<Link to='/about'>Read More</Link></p>
                         <div className="d-flex align-items-center pt-15 pb-25">
                             <p className="fw-normal">Connect With Us: </p>
                             <div className="social-icons">
@@ -59,6 +60,7 @@ const Footer = () => {
                                     <li><Link to="/facebook" target="_blank" rel="noopener" aria-label="facebook"><i><FaFacebook /></i></Link></li>
                                     <li><Link to="/instagram" target="_blank" rel="noopener" aria-label="instagram"><i><FaInstagram /></i></Link></li>
                                     <li><Link to="/linkedin" target="_blank" rel="noopener" aria-label="linkedin"><i><FaLinkedin /></i></Link></li>
+                                    <li><Link to="/twitter" target="_blank" rel="noopener" aria-label="twitter"><i><FaTwitter /></i></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -69,30 +71,12 @@ const Footer = () => {
                     <div className="widget widget-recent-post clearfix">
                         <h3 className="widget-title">Menu</h3>
                         <ul className="widget-post ttm-recent-post-list">
-                            <li>
-                                <div className="post-detail">
-                                    <div className="cat-link">
-                                        <a href="/react/hireco/blog_details">business</a>
-                                    </div>
-                                    <a href="/react/hireco/blog_details">Are  meetings falling to flat? Try these 10 tips</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="post-detail">
-                                    <div className="cat-link">
-                                        <a href="/react/hireco/blog_details">business</a>
-                                    </div>
-                                    <a href="/react/hireco/blog_details">Are You Moving Businesses To Another State?</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="post-detail">
-                                    <div className="cat-link">
-                                        <a href="/react/hireco/blog_details">business</a>
-                                    </div>
-                                    <a href="/react/hireco/blog_details">Shame: Does It Fine to Fit In The Workplace?</a>
-                                </div>
-                            </li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/services">Our Services</Link></li>
+                        <li><Link to="/job_listing">Job Listings</Link></li>
+                        <li><Link to="/login">Login</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -88,316 +88,74 @@ const Services = () => {
       </div>
    </div>
    <div className="slick-slider row slick_slider  pt-20 mb_10 slick-initialized" dir="ltr">
-      <Slider>      
-        <div className="slick-list">
-         <div className="slick-track" style={{ width: '4800px', opacity: 1, transform: 'translate3d(-1200px, 0px, 0px)' }}>
-         <div data-index="-2" tabindex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '600px' }}>
-         <div>
-            <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-            <div className="featured-imagebox featured-imagebox-services style1">
-               <div className="featured-thumbnail">
-                  <img className="img-fluid" src={Services3} alt="" />
-               </div>
-               <div className="featured-content">
-                  <div className="featured-title">
-                     <h3><a href="/react/hireco/services_details">Technical Services</a></h3>
-                  </div>
-                  <div className="featured-desc">
-                     <p>HireCo supplies variety of technical service including fabrication, design,  and commissioning</p>
-                  </div>
-                  <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div>
-         <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-         <div className="featured-imagebox featured-imagebox-services style1">
-            <div className="featured-thumbnail">
-               <img className="img-fluid" src={Services4} alt="" />
-            </div>
-            <div className="featured-content">
-               <div className="featured-title">
-                  <h3><a href="/react/hireco/services_details">Human Resource</a></h3>
-               </div>
-               <div className="featured-desc">
-                  <p>The most daunting task of  a Human Resource department, which must need to meet deadline.</p>
-               </div>
-               <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<div data-index="-1" tabindex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '600px' }}>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
+   <div className="row">
+  <div className="col-md-6">
+    <div className="featured-imagebox featured-imagebox-services style1">
       <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services5} alt="" />
+        <img src={Services1} alt="" />
       </div>
       <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Executive Search</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>We, HireCo specializes in recruiting  executives and other personnel for their client company</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <div className="featured-title">
+          <h3><a href="/react/hireco/services_details">Manpower Supply</a></h3>
+        </div>
+        <div className="featured-desc">
+          <p>We are quality personnel experts to the fields of expertise that needed for all kind of recruit projects</p>
+        </div>
+        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
       </div>
-   </div>
-</div>
-</div>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
+    </div>
+  </div>
+  <div className="col-md-6">
+    <div className="featured-imagebox featured-imagebox-services style1">
       <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services6} alt="" />
+        <img className="img-fluid" src={Services2} alt="" />
       </div>
       <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Retained search</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>HireCo tens to accelerate innovation current and future based solutions to support customers.</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <div className="featured-title">
+          <h3><a href="/react/hireco/services_details">Forte Acquisition</a></h3>
+        </div>
+        <div className="featured-desc">
+          <p>HireCo tens to accelerate innovation current and future based solutions to support customers.</p>
+        </div>
+        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
       </div>
-   </div>
-</div>
-</div>
-</div>
-<div data-index="0" className="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style={{ outline: 'none', width: '600px' }}>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
+    </div>
+  </div>
+  <div className="col-md-6">
+    <div className="featured-imagebox featured-imagebox-services style1">
       <div className="featured-thumbnail">
-         <img src={Services1} alt="" />
+        <img className="img-fluid" src={Services3} alt="" />
       </div>
       <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Manpower Supply</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>We are quality personnel experts to the fields of expertise that needed for all kind of recruit projects</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <div className="featured-title">
+          <h3><a href="/react/hireco/services_details">Technical Services</a></h3>
+        </div>
+        <div className="featured-desc">
+          <p>HireCo supplies variety of technical service including fabrication, design,  and commissioning</p>
+        </div>
+        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
       </div>
-   </div>
-</div>
-</div>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
+    </div>
+  </div>
+  <div className="col-md-6">
+    <div className="featured-imagebox featured-imagebox-services style1">
       <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services2} alt="" />
+        <img className="img-fluid" src={Services4} alt="" />
       </div>
       <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Forte Acquisition</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>HireCo tens to accelerate innovation current and future based solutions to support customers.</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <div className="featured-title">
+          <h3><a href="/react/hireco/services_details">CV Services</a></h3>
+        </div>
+        <div className="featured-desc">
+          <p>HireCo supplies variety of technical service including fabrication, design,  and commissioning</p>
+        </div>
+        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
       </div>
-   </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div data-index="1" className="slick-slide slick-active" tabindex="-1" aria-hidden="false" style={{ outline: 'none', width: '600px' }}>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services3} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Technical Services</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>HireCo supplies variety of technical service including fabrication, design,  and commissioning</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services4} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Human Resource</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>The most daunting task of  a Human Resource department, which must need to meet deadline.</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-</div>
-<div data-index="2" className="slick-slide" tabindex="-1" aria-hidden="true" style={{ outline: 'none', width: '600px' }}>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services5} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Executive Search</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>We, HireCo specializes in recruiting  executives and other personnel for their client company</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services6} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Retained search</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>HireCo tens to accelerate innovation current and future based solutions to support customers.</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-</div>
-<div data-index="3" tabindex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '600px' }}>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img src={Services1} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Manpower Supply</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>We are quality personnel experts to the fields of expertise that needed for all kind of recruit projects</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services2} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Forte Acquisition</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>HireCo tens to accelerate innovation current and future based solutions to support customers.</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-</div>
-<div data-index="4" tabindex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '600px' }}>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services3} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Technical Services</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>HireCo supplies variety of technical service including fabrication, design,  and commissioning</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services4} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Human Resource</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>The most daunting task of  a Human Resource department, which must need to meet deadline.</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-</div>
-<div data-index="5" tabindex="-1" className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '600px' }}>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services5} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Executive Search</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>We, HireCo specializes in recruiting  executives and other personnel for their client company</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-<div>
-   <div className="col-md-12" tabindex="-1" style={{ width: '100%', display: 'inline-block' }}>
-   <div className="featured-imagebox featured-imagebox-services style1">
-      <div className="featured-thumbnail">
-         <img className="img-fluid" src={Services6} alt="" />
-      </div>
-      <div className="featured-content">
-         <div className="featured-title">
-            <h3><a href="/react/hireco/services_details">Retained search</a></h3>
-         </div>
-         <div className="featured-desc">
-            <p>HireCo tens to accelerate innovation current and future based solutions to support customers.</p>
-         </div>
-         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
-      </div>
-   </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</Slider>
+
+
 
 </div>
 </div>
