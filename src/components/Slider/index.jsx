@@ -9,6 +9,7 @@
 import React from 'react';
 import Img from '../../assets/img/slider-mainbg-001.jpg';
 import styled from 'styled-components';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaLocationDot, FaSearchengin, FaList } from "react-icons/fa6";
 
 
@@ -39,6 +40,15 @@ const SearchForm = styled.form`
 
 // React component
 const SlideComponent = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Your login logic goes here, after successful login:
+    navigate('/job_listing');
+  };
+
+
   return (
     <SlideContainer className="slide" tabIndex="-1" style={{ backgroundImage:  `url(${Img})` }}>
       <ContentContainer className="slide__content">
@@ -55,7 +65,7 @@ const SlideComponent = () => {
                 <div className="row">
                   <div className="col-lg-12">
                     <p data-animation="animate__fadeInDown" className="mb-30 mb-md-0">
-                      <SearchForm id="b_search_Form" className="b_search_Form wrap-form d-block" method="post" action="#" data-mailchimp="true">
+                      <SearchForm id="b_search_Form" className="b_search_Form wrap-form d-block" onSubmit={handleSubmit} data-mailchimp="true">
                         <div className="row row-equal-height">
                           <div className="col-lg-3">
                             <label><input type="text" id="filter" placeholder="Job Title or Keywords" /></label>
