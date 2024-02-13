@@ -21,6 +21,7 @@ import Job4 from "../assets/img/job-04.png";
 import Job5 from "../assets/img/job-05.png";
 import Job6 from "../assets/img/job-06.png";
 import { Link } from 'react-router-dom';
+import { FaLocationDot, FaSearchengin } from "react-icons/fa6";
 
 
 const JobListing = () => {
@@ -62,8 +63,8 @@ const JobListing = () => {
                </div>
                <div className="layer-content">
                   <form id="search_Form" className="search_Form wrap-form" method="post" action="#" data-mailchimp="true">
-                     <label><i className="ti ti-search"></i><input type="text" id="filter" placeholder="Job Title or Keywords" /></label>
-                     <label><i className="ti ti-location-pin"></i><input type="email" name="EMAIL" id="txtemail" placeholder="location" /></label>
+                     <label><input type="text" id="filter" placeholder="Job Title or Keywords" /></label>
+                     <label><input type="email" name="EMAIL" id="txtemail" placeholder=" location" /></label>
                      <button className="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Find Jobs</button>
                   </form>
                </div>

@@ -115,7 +115,7 @@ const Services = () => {
           <h3><a href="/react/hireco/services_details">Forte Acquisition</a></h3>
         </div>
         <div className="featured-desc">
-          <p>HireCo tens to accelerate innovation current and future based solutions to support customers.</p>
+          <p>Ramos Recruiting Resources tens to accelerate innovation current and future based solutions to support customers.</p>
         </div>
         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
       </div>
@@ -131,7 +131,7 @@ const Services = () => {
           <h3><a href="/react/hireco/services_details">Technical Services</a></h3>
         </div>
         <div className="featured-desc">
-          <p>HireCo supplies variety of technical service including fabrication, design,  and commissioning</p>
+          <p>Ramos Recruiting Resources supplies variety of technical service including fabrication, design,  and commissioning</p>
         </div>
         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
       </div>
@@ -147,7 +147,7 @@ const Services = () => {
           <h3><a href="/react/hireco/services_details">CV Services</a></h3>
         </div>
         <div className="featured-desc">
-          <p>HireCo supplies variety of technical service including fabrication, design,  and commissioning</p>
+          <p>Ramos Recruiting Resources supplies variety of technical service including fabrication, design,  and commissioning</p>
         </div>
         <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
       </div>

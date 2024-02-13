@@ -72,9 +72,9 @@ const Contact = () => {
                     </div>
                     <div className="featured-desc">
                       <ul className="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
-                        <li className="pb-5"><i><FaMapMarkerAlt /></i><div className="ttm-list-li-content">Addres: Newyork Envanto 45 HQ</div></li>
-                        <li className="pb-5"> <i><FaPhone /></i><div className="ttm-list-li-content">Call Us:123 456 7890</div></li>
-                        <li><i><FaEnvelope /></i> <div className="ttm-list-li-content"><a href="mailto:info@example.com">Email:info@example.com</a></div></li>
+                        <li className="pb-5"><i><FaMapMarkerAlt /></i><div className="ttm-list-li-content">Addres: 5722 Strong Creek Drive Houston TX 770</div></li>
+                        <li className="pb-5"> <i><FaPhone /></i><div className="ttm-list-li-content">Call Us:+1 832 510 3293</div></li>
+                        <li><i><FaEnvelope /></i> <div className="ttm-list-li-content"><Link to="#">Email:careers@ramosrr.com</Link></div></li>
                       </ul>
                     </div>
                   </div>

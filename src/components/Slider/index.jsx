@@ -9,6 +9,8 @@
 import React from 'react';
 import Img from '../../assets/img/slider-mainbg-001.jpg';
 import styled from 'styled-components';
+import { FaLocationDot, FaSearchengin, FaList } from "react-icons/fa6";
+
 
 // Styled components
 const SlideContainer = styled.div`
@@ -56,10 +58,10 @@ const SlideComponent = () => {
                       <SearchForm id="b_search_Form" className="b_search_Form wrap-form d-block" method="post" action="#" data-mailchimp="true">
                         <div className="row row-equal-height">
                           <div className="col-lg-3">
-                            <label><i className="ti ti-search"></i><input type="text" id="filter" placeholder="Job Title or Keywords" /></label>
+                            <label><input type="text" id="filter" placeholder="Job Title or Keywords" /></label>
                           </div>
                           <div className="col-lg-3">
-                            <label><i className="ti ti-location-pin"></i><select name="locations" aria-hidden="true" placeholder="Locations">
+                            <label><select name="locations" aria-hidden="true" placeholder=" Locations">
                               <option value="">Locations</option>
                               <option value="Loc1">Locations1</option>
                               <option value="Loc2">Locations2</option>
@@ -70,7 +72,7 @@ const SlideComponent = () => {
                             </select></label>
                           </div>
                           <div className="col-lg-3">
-                            <label><i className="ti ti-list"></i><select name="categories" aria-hidden="true" placeholder="Categories">
+                            <label><select name="categories" aria-hidden="true" placeholder="Categories">
                               <option value="">Categories</option>
                               <option value="Ed1">Categories1</option>
                               <option value="Ed2">Categories2</option>
@@ -87,7 +89,7 @@ const SlideComponent = () => {
                       </SearchForm>
                     </p>
                     <p data-animation="animate__fadeInDown" className="d-none d-md-block">
-                      <span className="text-theme-WhiteColor">Popular Searches :  </span>Designer,  Developer,  Web,  IOS,  PHP,  Senior,  Engineer
+                      <span className="text-theme-WhiteColor">Popular Searches :  Designer,  Developer,  Web,  IOS,  PHP,  Senior,  Engineer</span>
                     </p>
                   </div>
                 </div>

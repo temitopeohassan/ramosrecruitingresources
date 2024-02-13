@@ -84,9 +84,9 @@ const Footer = () => {
                     <div className="widget widget-contact clearfix">
                         <h3 className="widget-title">Quick Contact!</h3>
                         <ul className="widget_contact_wrapper">
-                            <li><i><FaPhone /></i><h3>Call Us On:</h3>+92 777 555 0000</li>
-                            <li><i><FaMapMarkerAlt /></i><h3>Address:</h3>Suite 20 Golden Street USA</li>
-                            <li><i><FaEnvelope /></i><h3>Email:</h3><a href="mailto:info@example.com">info@example.com</a></li>
+                            <li><i><FaPhone /></i><h3>Call Us On:</h3>+1 832 510 3293</li>
+                            <li><i><FaMapMarkerAlt /></i><h3>Address:</h3>5722 Strong Creek Drive Houston TX 770</li>
+                            <li><i><FaEnvelope /></i><h3>Email:</h3><Link to="#">careers@ramosrr.com</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const Footer = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 col-md-6">
-                    <span className="copyright">Copyright © 2021 <a href="/react/hireco/">HireCo </a>All rights reserved.</span>
+                    <span className="copyright">Copyright © 2021 <a href="/react/hireco/">Ramos Recruiting Resources </a>All rights reserved.</span>
                     <ul className="footer-nav-menu">
                         <li><a href="/react/hireco/">Privacy &amp; Policy</a></li>
                         <li><a href="/react/hireco/">Terms &amp; Conditions</a></li>
