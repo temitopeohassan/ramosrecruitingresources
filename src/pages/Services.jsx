@@ -78,12 +78,10 @@ const Services = () => {
       <div className="col-lg-11">
          <div className="section-title style2 mb-0">
             <div className="title-header">
-               <h3>Classic <span className="text-theme-SkinColor">Service</span></h3>
+               <h3>Our <span className="text-theme-SkinColor">Services</span></h3>
                <h2 className="title">We Understand Needs</h2>
             </div>
-            <div className="title-desc">
-               <p>A process that involves everything from <span className="text-theme-SkinColor">identifying,</span> attracting, shortlisting, interviewing, selecting, hiring, screening &amp; onboarding employees.</p>
-            </div>
+          
          </div>
       </div>
    </div>
@@ -96,12 +94,12 @@ const Services = () => {
       </div>
       <div className="featured-content">
         <div className="featured-title">
-          <h3><a href="/react/hireco/services_details">Manpower Supply</a></h3>
+          <h3><Link to="/services_details">Manpower Supply</Link></h3>
         </div>
         <div className="featured-desc">
           <p>We are quality personnel experts to the fields of expertise that needed for all kind of recruit projects</p>
         </div>
-        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <Link className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" to="/services_details">read more!</Link>
       </div>
     </div>
   </div>
@@ -112,12 +110,12 @@ const Services = () => {
       </div>
       <div className="featured-content">
         <div className="featured-title">
-          <h3><a href="/react/hireco/services_details">Forte Acquisition</a></h3>
+          <h3><Link to="/services_details">Technical Services</Link></h3>
         </div>
         <div className="featured-desc">
           <p>Ramos Recruiting Resources tens to accelerate innovation current and future based solutions to support customers.</p>
         </div>
-        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <Link className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" to="/services_details">read more!</Link>
       </div>
     </div>
   </div>
@@ -128,12 +126,12 @@ const Services = () => {
       </div>
       <div className="featured-content">
         <div className="featured-title">
-          <h3><a href="/react/hireco/services_details">Technical Services</a></h3>
+          <h3><Link to="/services_details">Executive Search</Link></h3>
         </div>
         <div className="featured-desc">
           <p>Ramos Recruiting Resources supplies variety of technical service including fabrication, design,  and commissioning</p>
         </div>
-        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <Link className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" to="/services_details">read more!</Link>
       </div>
     </div>
   </div>
@@ -144,12 +142,12 @@ const Services = () => {
       </div>
       <div className="featured-content">
         <div className="featured-title">
-          <h3><a href="/react/hireco/services_details">CV Services</a></h3>
+          <h3><Link to="/services_details">CV Services</Link></h3>
         </div>
         <div className="featured-desc">
           <p>Ramos Recruiting Resources supplies variety of technical service including fabrication, design,  and commissioning</p>
         </div>
-        <a className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" href="/react/hireco/services_details">read more!</a>
+        <Link  className="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-darkgrey" to="/services_details">read more!</Link>
       </div>
     </div>
   </div>

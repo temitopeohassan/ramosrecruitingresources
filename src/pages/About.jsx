@@ -50,7 +50,7 @@ const ServiceComponent = () => {
             <div className="col-lg-12 text-center">
                <div className="page-header-content-inner">
                   <div className="page-header-content">
-                     <h2>Job Listings</h2>
+                     <h2>About Us</h2>
                      <div>
                      </div>
                      <div className="breadcrumb-wrapper">
@@ -58,7 +58,7 @@ const ServiceComponent = () => {
                            <Link to="/" title="Homepage">
                            Home</Link>
                         </span>
-                        <span className="bread-sep">&nbsp;/&nbsp;</span>Job Listings
+                        <span className="bread-sep">&nbsp;/&nbsp;</span>About Us
                      </div>
                      <div>
                      </div>

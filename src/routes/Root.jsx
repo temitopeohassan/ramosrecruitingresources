@@ -16,10 +16,12 @@ import Footer from '../components/Footer';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Services from '../pages/Services';
+import ServicesDetails from '../pages/ServicesDetails';
 import JobListing from '../pages/JobListing';
+import JobDetails from '../pages/JobDetails';
 import Login from '../pages/Login';
 import Contact from '../pages/Contact';
-import User from '../pages/User';
+import UserProfile from '../pages/UserProfile';
 import UserUpdate from '../pages/UserUpdate';
 import SignUp from '../pages/SignUp';
 import ForgotPwd from '../pages/ForgotPwd';
@@ -41,10 +43,12 @@ const Root = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services_details" element={<ServicesDetails />} />
         <Route path="/job_listing" element={<JobListing />} />
+        <Route path="/job_details" element={<JobDetails />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/user_profile" element={<User />} />
+        <Route path="/user_profile" element={<UserProfile />} />
         <Route path="/profile_update" element={<UserUpdate />} />
         <Route path="/sign_up" element={<SignUp />} />
         <Route path="/forgot_password" element={<ForgotPwd />} />

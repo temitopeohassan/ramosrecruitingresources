@@ -21,7 +21,7 @@ import Job4 from "../assets/img/job-04.png";
 import Job5 from "../assets/img/job-05.png";
 import Job6 from "../assets/img/job-06.png";
 import { Link } from 'react-router-dom';
-import { FaLocationDot, FaSearchengin } from "react-icons/fa6";
+import { FaLocationDot, FaList } from "react-icons/fa6";
 
 
 const JobListing = () => {
@@ -67,12 +67,14 @@ const JobListing = () => {
                      <label><input type="email" name="EMAIL" id="txtemail" placeholder=" location" /></label>
                      <button className="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Find Jobs</button>
                   </form>
+                  
                </div>
             </div>
          </div>
       </div>
    </div>
 </div>
+<br /><br />
 <div className="container">
    <div className='row'>
       <div className="col-lg-4 widget-area sidebar-left job_list-widget-area">
@@ -90,7 +92,7 @@ const JobListing = () => {
                <div className="widget-banner-inner">
                   <h3 className="mb-15">Make a Difference with Online Resume!</h3>
                   <p className="mb-30">Your Resume in Minutes with Jobs Resume Assistant is Ready!</p>
-                  <a className="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" href="/react/hireco/">appoinments!</a>
+                  <Link className="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" to="#">appoinments!</Link>
                </div>
             </div>
       </div>
@@ -123,13 +125,13 @@ const JobListing = () => {
                <div className="featured-thumbnail"><img src={Job1} alt="" /></div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details">Vacancy For the Charted Account</a></h3>
+                     <h3><Link to="/job_details">Vacancy For the Charted Account</Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="green">full time</span></div>
                   </div>
                </div>
@@ -143,13 +145,13 @@ const JobListing = () => {
                </div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details">Vacancy For the Business Analyst</a></h3>
+                     <h3><Link to="/job_details">Vacancy For the Business Analyst</Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="danger-color">part time</span></div>
                   </div>
                </div>
@@ -160,13 +162,13 @@ const JobListing = () => {
                <div className="featured-thumbnail"><img src={Job3} alt=""/></div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details"><a href="/react/hireco/Job_details">Opening For Social Media Manager</a></a></h3>
+                     <h3><Link to="/job_details"><Link to="/job_details">Opening For Social Media Manager</Link></Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="deep-orange">full time</span></div>
                   </div>
                </div>
@@ -177,13 +179,13 @@ const JobListing = () => {
                <div className="featured-thumbnail"><img src={Job4} alt="" /></div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details"><a href="/react/hireco/Job_details">Opening For The Content Creator</a></a></h3>
+                     <h3><Link to="/job_details"><Link to="/job_details">Opening For The Content Creator</Link></Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="green">full time</span></div>
                   </div>
                </div>
@@ -194,13 +196,13 @@ const JobListing = () => {
                <div className="featured-thumbnail"><img src={Job5} alt="" /></div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details">Job Vacancy For the Bank Manager</a></h3>
+                     <h3><Link to="/job_details">Job Vacancy For the Bank Manager</Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="danger-color">part time</span></div>
                   </div>
                </div>
@@ -211,13 +213,13 @@ const JobListing = () => {
                <div className="featured-thumbnail"><img src={Job6} alt="" /></div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details">Vacancy For the Human Resource</a> </h3>
+                     <h3><Link to="/job_details">Vacancy For the Human Resource</Link> </h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="blue">part time</span></div>
                   </div>
                </div>
@@ -231,13 +233,13 @@ const JobListing = () => {
                </div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details">Vacancy For the Business Analyst</a></h3>
+                     <h3><Link to="/job_details">Vacancy For the Business Analyst</Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="danger-color">part time</span></div>
                   </div>
                </div>
@@ -248,13 +250,13 @@ const JobListing = () => {
                <div className="featured-thumbnail"><img src={Job3} alt="" /></div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details"><a href="/react/hireco/Job_details">Opening For Social Media Manager</a></a></h3>
+                     <h3><Link to="/job_details"><Link to="/job_details">Opening For Social Media Manager</Link></Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="deep-orange">full time</span></div>
                   </div>
                </div>
@@ -265,20 +267,19 @@ const JobListing = () => {
                <div className="featured-thumbnail"><img src={Job4} alt="" /></div>
                <div className="featured-content">
                   <div className="featured-title">
-                     <h3><a href="/react/hireco/Job_details"><a href="/react/hireco/Job_details">Opening For The Content Creator</a></a></h3>
+                     <h3><Link to="/job_details"><Link to="/job_details">Opening For The Content Creator</Link></Link></h3>
                   </div>
                   <div className="featured-desc">
                      <p>Published 2Days Ago.</p>
                   </div>
                   <div className="featured-bottom">
-                     <div className="job-meta"><span><i className="fa fa-map-marker-alt"></i>California</span><span><i className="fa fa-filter"></i>Automotive Jobs</span></div>
+                     <div className="job-meta"><span><FaLocationDot /> California</span><span><FaList /> Automotive Jobs</span></div>
                      <div className="job-time"><span className="green">full time</span></div>
                   </div>
                </div>
             </div>
          </div>
          <div className="col-lg-12">
-            <div className="job-pagination-block"><a className="page-nav-link">prev</a><a className="page-nav-link current">1</a><a className="page-nav-link" href="#">2</a><a className="page-nav-link" href="#">3</a><a className="page-nav-link" href="#">....</a><a className="page-nav-link">next</a></div>
          </div>
       </div>
    </div>
