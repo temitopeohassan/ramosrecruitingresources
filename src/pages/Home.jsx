@@ -23,7 +23,6 @@ const Home = () => {
     <Featured />
     <Services />
     <ProgressBarSection />
-    <CTA />
     
     </>
   )

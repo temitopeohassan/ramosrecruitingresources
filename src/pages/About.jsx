@@ -8,38 +8,11 @@ import styled from 'styled-components';
 import Bg from "../assets/img/pagetitle-bg.jpg";
 import ImgBg from "../assets/img/row-bgimage-7.jpg";
 import { Link } from 'react-router-dom';
-import Single from "../assets/img/single-img-05.jpg";
-import CTA from '../components/CTA';
-import StyledComponent from "../components/AboutSection"
+import Single from "../assets/img/col-bgimage-1.jpg";
+import { FaCircleCheck } from "react-icons/fa6";
 
 
-
-const Container = styled.div`
-  margin-top: 40px;
-`;
-
-const DescriptionTitle = styled.h3`
-  margin-bottom: 20px;
-`;
-
-const FeaturedIconBox = styled.div`
-  margin-top: 20px;
-`;
-
-const FeaturedTitle = styled.h3`
-  color: #000; /* You can adjust the color as needed */
-`;
-
-
-const FeaturedDesc = styled.div`
-  color: #000; /* You can adjust the color as needed */
-`;
-
-const SingleImageWrapper = styled.div`
-  margin-bottom: 30px;
-`;
-
-const ServiceComponent = () => {
+const About = () => {
   return (
 
    <>
@@ -69,37 +42,36 @@ const ServiceComponent = () => {
       </div>
    </div>
    </div>
-   <Container className="col-lg-12 content-area order-lg-2">
-
-
-
-
-
-
-
-
-
-
-
-
-   <div className='row'>
-    <div className="col-md-6">
-        <div className="ttm_single_image-wrapper mb-30">
-        <img className="img-fluid" src={Single} alt="services-img" />
-        </div>
-              </div>
-        
-                <div className="col-md-6">
-                  <FeaturedTitle className="mb-20">Who We Are</FeaturedTitle>
-                  <FeaturedDesc>
-                  <p>At Ramos Recruiting Resources (RRR), We are Resourceful, Resilient and Reliable. The No.1 solution for a full staffing service, and highly skilled professionals who seek life-changing opportunities.</p>
-                  <p>We place available jobs that are up-to-the-minute and relevant relating to any field. We don’t only offer jobs, we put job seekers first and help to build their career. </p>
-                  <p>We differentiate ourselves from other agencies by aligning the optimal candidate with the right personality and skill set, to meet your organization needs. </p>
-                  <p>RRR will pride itself in assisting organizations in the recruitment of the very best talents that match their various vacant positions while equipping talents with the tools needed to successfully transition into the organization’s roles as required.</p> 
-                  </FeaturedDesc>
+   <section className="ttm-row about-section bg-layer-equal-height clearfix">
+      <div className="container">
+        <div className="row g-0">
+          <div className="col-md-6">
+            <div className="pb-70 pb-md-50 pr-60 pr-md-0">
+              <div className="section-title">
+                <div className="title-header">
+                  <h2 className="title">Who We Are</h2>
                 </div>
-</div>
-</Container>
+                <div className="title-desc">
+                  <p>At Ramos Recruiting Resources (RRR), We are Resourceful, Resilient and Reliable. The No.1 solution for a full staffing service, and highly skilled professionals who seek life-changing opportunities. We place available jobs that are up-to-the-minute and relevant relating to any field. We don’t only offer jobs, we put job seekers first and help to build their career. We differentiate ourselves from other agencies by aligning the optimal candidate with the right personality and skill set, to meet your organization needs. RRR will pride itself in assisting organizations in the recruitment of the very best talents that match their various vacant positions while equipping talents with the tools needed to successfully transition into the organization’s roles as required.
+
+</p>
+                </div>
+              </div>
+              
+              <Link className="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border ttm-btn-color-dark" to="/job_listing">Find A Jobs!</Link>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="col-bg-img-one ttm-col-bgimage-yes ttm-bg">
+              <div className="ttm-col-wrapper-bg-layer ttm-bg-layer" style={{ backgroundImage:  `url(${Single})` }}></div>
+              <div className="layer-content"></div>
+              <img src={Single} className="img-fluid col-bg-img-res" alt="bgimage" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <section className="ttm-row cta-section bg-img7 bg-theme-DarkColor ttm-bg ttm-bgimage-yes text-theme-WhiteColor clearfix" style={{ backgroundImage:  `url(${ImgBg})` }}
 >
     <div className="ttm-row-wrapper-bg-layer ttm-bg-layer bg-theme-DarkColor"></div>
@@ -119,50 +91,39 @@ const ServiceComponent = () => {
                         </div>
                         </div>
                         </section>
-
-<div className="row">
-    {/* Repeat the following block for each service */}
-    <div className="col-lg-6 col-md-6 col-sm-6">
-      <div className="featured-icon-box icon-align-before-content icon-ver_align-top mr-50 mr-md-0 mt-20">
-      
-        <div className="featured-content">
-          <div className="featured-title">
-            <h3>Our Mission</h3>
+                        <section className="ttm-row clearfix">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="column-content">
+              <h3>Our Mission</h3>
+              <ul className="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor text-theme-DarkColor">
+                  <li><i><FaCircleCheck /></i><div className="ttm-list-li-content">To provide a staffing solution mechanism that offers a partnership-based workforce with innovative solution to address the challenges of unemployment. </div></li>
+                  <li><i><FaCircleCheck /></i><div className="ttm-list-li-content">To provide a platform where reputable employers can find and connect with the right candidate, with the required cutting-edge skills to join their team and grow the business.</div></li>
+                  <li><i><FaCircleCheck /></i><div className="ttm-list-li-content">To provide tailored solutions for everything ranging from transparent recruitment experience to using human capital management and employment – if we can over-deliver, we do!</div></li>
+                </ul>
+            </div>
           </div>
-          <div className="featured-desc">
-          <p>To provide a staffing solution mechanism that offers a partnership-based workforce with innovative solution to address the challenges of unemployment.</p>
-
-<p>To provide a platform where reputable employers can find and connect with the right candidate, with the required cutting-edge skills to join their team and grow the business.</p>
-
-<p>To provide tailored solutions for everything ranging from transparent recruitment experience to using human capital management and employment – if we can over-deliver, we do!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="col-lg-6 col-md-6 col-sm-6">
-      <div className="featured-icon-box icon-align-before-content icon-ver_align-top mr-50 mr-md-0 mt-20">
-        
-        <div className="featured-content">
-          <div className="featured-title">
-            <h3>Our Vision</h3>
-          </div>
-          <div className="featured-desc">
-          <p>To become the key player in the recruiting industry using our existing integrated approach to create fulfillment for our clients, candidate, and staff. </p>
-
-<p>To build a database of resources that will enable a job seeker to succeed in the marketplace.</p>
-
+          <div className="col-lg-6">
+            <div className="column-content">
+              <h3>Our Vision</h3>
+              <ul className="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor text-theme-DarkColor">
+                  <li><i><FaCircleCheck /></i><div className="ttm-list-li-content">To become the key player in the recruiting industry using our existing integrated approach to create fulfillment for our clients, candidate, and staff. </div></li>
+                  <li><i><FaCircleCheck /></i><div className="ttm-list-li-content">To build a database of resources that will enable a job seeker to succeed in the marketplace.</div></li>
+                </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    {/* End of repeated block */}
-  </div>
+    </section>
+
+
     
-<CTA />
+
    </>
   );
 };
 
-export default ServiceComponent;
+export default About;
 
 

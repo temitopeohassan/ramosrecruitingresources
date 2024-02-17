@@ -56,8 +56,7 @@ const Contact = () => {
           <div className="col-lg-12">
             <div className="section-title title-style-center_text pb-15">
               <div className="title-header">
-                <h3>get in <span className="text-theme-SkinColor">touch</span></h3>
-                <h2 className="title">Feel Free To Contact</h2>
+                <h2 className="title">Contact Us</h2>
                 </div>
                 </div>
                 </div>
@@ -68,7 +67,6 @@ const Contact = () => {
                 </div>
                 <div className="featured-content p-30">
                   <div className="featured-title">
-                    <h3>United States</h3>
                     </div>
                     <div className="featured-desc">
                       <ul className="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
