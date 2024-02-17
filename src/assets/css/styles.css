@@ -25269,3 +25269,9 @@ i.flag.zimbabwe:before,i.flag.zw:before {
     color: #000
 }
 
+.scrolling-background {
+  background-image: url('../img/row-bgimage-7.jpg');
+  background-size: cover;
+  background-attachment: fixed; /* This makes the background image fixed while scrolling */
+  height: 100vh; /* Adjust height as needed */
+}

@@ -72,7 +72,8 @@ const About = () => {
       </div>
     </section>
 
-<section className="ttm-row cta-section bg-img7 bg-theme-DarkColor ttm-bg ttm-bgimage-yes text-theme-WhiteColor clearfix" style={{ backgroundImage:  `url(${ImgBg})` }}
+<section className="ttm-row cta-section bg-img7 bg-theme-DarkColor ttm-bg ttm-bgimage-yes text-theme-WhiteColor clearfix" style={{ backgroundImage:  `url(${ImgBg})`, backgroundAttachment: 'fixed',
+  height: '100vh' }}
 >
     <div className="ttm-row-wrapper-bg-layer ttm-bg-layer bg-theme-DarkColor"></div>
     <div className="container">

@@ -1,36 +1,24 @@
-
-
-
-
-
-
-
-
-
-
 // index.js
 
-// Import necessary modules
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Root from "./routes/Root";
 import AdminRoutes from "./routes/AdminRoutes"; // Import AdminRoutes component
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { AuthProvider } from "./contexts/AuthContext"; // Import AuthProvider
 
-console.log('Starting application initialization'); // Log at the beginning of the file to indicate the start of application initialization
+console.log('Starting application initialization');
 
 // Create routes
 const routes = (
   <Router>
-    <Routes>
-      <Route path="/*" element={<Root />} />
-      <Route path="/admin/*" element={<AdminRoutes />} /> {/* Include AdminRoutes component */}
-    </Routes>
+    <AuthProvider> {/* Wrap your routes with AuthProvider */}
+      <Routes>
+        <Route path="/*" element={<Root />} />
+        <Route path="/admin/*" element={<AdminRoutes />} />
+      </Routes>
+    </AuthProvider>
   </Router>
 );
 
@@ -41,4 +29,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-console.log('Application initialized successfully'); // Log at the end to indicate successful initialization
+console.log('Application initialized successfully');

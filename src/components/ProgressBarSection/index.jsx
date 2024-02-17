@@ -1,9 +1,15 @@
+
+
+
+
+
+
 import React from 'react';
 import styled from 'styled-components';
 import Bg from "../../assets/img/row-bgimage-2.jpg";
 import { MdOutlinePerson, MdManageSearch, MdOutlinePeopleAlt, MdCheck } from "react-icons/md";
 import { BsFillPeopleFill } from "react-icons/bs";
-
+import { useSpring, animated} from "react-spring";
 // Styled components
 
 const RowWrapperBgLayer = styled.div`
@@ -99,10 +105,28 @@ const ProgressBarRectWrapper = styled.div`
 `;
 
 // React component
+
+function Number({ n }){
+
+  const { number } = useSpring({
+  from:{},
+  number: n,
+  delay: 200,
+  config: { mass: 1, tension: 20, friction: 10},
+  });
+  
+  return <animated.div>{number.to(() => n.toFixed())}</animated.div>
+  
+  }
+  
+
 const ProgressBarSection = () => {
+
+
   return (
    <>
-    <Section className="ttm-row about-section bg-theme-DarkColor ttm-bg ttm-bgimage-yes text-theme-WhiteColor clearfix" style={{ backgroundImage:  `url(${Bg})` }} >
+    <Section className="ttm-row about-section bg-theme-DarkColor ttm-bg ttm-bgimage-yes text-theme-WhiteColor clearfix" style={{ backgroundImage:  `url(${Bg})`, backgroundAttachment: 'fixed',
+  height: '100vh' }} >
       <RowWrapperBgLayer className="ttm-row-wrapper-bg-layer ttm-bg-layer bg-theme-DarkColor"></RowWrapperBgLayer>
       <div className="container">
         <div className="row align-items-center">
@@ -121,7 +145,7 @@ const ProgressBarSection = () => {
               <BsFillPeopleFill />
               </div>
               <div className="ttm-fid-contents">
-                <h4><span>2887</span></h4>
+                <h4><span><Number n={55} /></span></h4>
                 <h3 className="ttm-fid-title">Happy Clients</h3>
               </div>
             </Fid>
