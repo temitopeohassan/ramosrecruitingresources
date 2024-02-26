@@ -24,6 +24,8 @@ import Contact from '../pages/Contact';
 import UserProfile from '../pages/UserProfile';
 import UserUpdate from '../pages/UserUpdate';
 import SignUp from '../pages/SignUp';
+import Policy from '../pages/Policy';
+import TermsConditions from '../pages/TermsConditions';
 import ForgotPwd from '../pages/ForgotPwd';
 import ScrollToTop from '../components/ScrollToTop';
 import Facebook from '../pages/facebook';
@@ -51,6 +53,8 @@ const Root = () => {
         <Route path="/user_profile" element={<UserProfile />} />
         <Route path="/profile_update" element={<UserUpdate />} />
         <Route path="/sign_up" element={<SignUp />} />
+        <Route path="/privacy_policy" element={<Policy />} />
+        <Route path="/terms_and_conditions" element={<TermsConditions />} />
         <Route path="/forgot_password" element={<ForgotPwd />} />
         <Route path="/facebook" element={<Facebook />} />
         <Route path="/instagram" element={<Instagram />} />

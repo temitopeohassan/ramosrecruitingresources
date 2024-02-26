@@ -21,9 +21,32 @@ const Login = () => {
 
   return (
     <>
-      <div className="page-header-area bg-img" style={{ backgroundImage:  `url(${Bg})` }}>
-        {/* Page header content */}
+       <div className="page-header-area bg-img" style={{ backgroundImage:  `url(${Bg})` }} >
+<div className="page-header-area-inner">
+   <div className="container">
+      <div className="row">
+         <div className="col-lg-12 text-center">
+            <div className="page-header-content-inner">
+               <div className="page-header-content">
+                  <h2>Login To Your Account</h2>
+                  <div>
+                  </div>
+                  <div className="breadcrumb-wrapper">
+                     <span>
+                        <Link to="/" title="Homepage">
+                        Home</Link>
+                     </span>
+                     <span className="bread-sep">&nbsp;/&nbsp;</span>Login
+                  </div>
+                  <div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
+   </div>
+</div>
+</div>
 
       <div className="ttm-row login-section clearfix">
             <div className="container">
@@ -51,8 +74,8 @@ const Login = () => {
                                                         <div className="col-lg-12">
                                                             <label>
                                                                 <div className="forgot-pwd text-center mt-5">
-                                                                    <p><a href="#" className="text-theme-SkinColor">Forgot Password?</a></p>
-                                                                    <p>Don't have account? <a href="/react/hireco/register" className="text-theme-SkinColor">Sign Up here</a></p>
+                                                                    <p><Link to="#" className="text-theme-SkinColor">Forgot Password?</Link></p>
+                                                                    <p>Don't have account? <Link to="/sign_up" className="text-theme-SkinColor">Sign Up here</Link></p>
                                                                 </div>
                                                             </label>
                                                         </div>

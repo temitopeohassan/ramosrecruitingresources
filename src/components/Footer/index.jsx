@@ -8,7 +8,7 @@
 
 
 
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import img from '../../assets/img/footer-logo.png'
 import {
     FaEnvelope,
@@ -23,6 +23,14 @@ import {
 
 
 const Footer = () => {
+    const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    // Update the current year when the component mounts
+    setCurrentYear(new Date().getFullYear());
+  }, []); // Empty dependency array ensures the effect runs only once
+
+
   return (
    <>
   
@@ -97,10 +105,10 @@ const Footer = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 col-md-6">
-                    <span className="copyright">Copyright © 2021 <a href="/react/hireco/">Ramos Recruiting Resources </a>All rights reserved.</span>
+                    <span className="copyright">Copyright © {currentYear} <a href="/">Ramos Recruiting Resources </a>All rights reserved.</span>
                     <ul className="footer-nav-menu">
-                        <li><a href="/react/hireco/">Privacy &amp; Policy</a></li>
-                        <li><a href="/react/hireco/">Terms &amp; Conditions</a></li>
+                        <li><a href="/privacy">Privacy &amp; Policy</a></li>
+                        <li><a href="/terms_conditions">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
                 <div className="col-lg-4 col-md-6 d-lg-flex align-items-center justify-content-between">
